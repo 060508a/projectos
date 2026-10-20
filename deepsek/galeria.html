@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Escola do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu mobile com hambúrguer -->
+    <div class="mobile-menu-container">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <!-- Menu lateral mobile que aparece ao clicar no hambúrguer -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="dashboard.html">Cursos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Menu de navegação para desktop -->
+    <nav class="desktop-nav">
+        <div class="logo">Escola do Futuro</div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="dashboard.html">Cursos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botão fixo de toggle dark mode -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <main class="gallery">
+        <div class="gallery-header">
+            <h1>Galeria de Projetos</h1>
+            <p>Veja o trabalho incrível dos nossos alunos</p>
+        </div>
+        
+        <section class="gallery-section">
+            <h2>Projetos Destacados</h2>
+            <div class="gallery-grid">
+                <div class="card gallery-card">
+                    <div class="gallery-icon">🎮</div>
+                    <h3>Jogo Criativo</h3>
+                    <p>Jogo 2D criado por aluno - Plataforma com obstáculos</p>
+                    <span class="gallery-tag">Programação Criativa</span>
+                </div>
+                <div class="card gallery-card">
+                    <div class="gallery-icon">🤖</div>
+                    <h3>Protótipo de Robô</h3>
+                    <p>Robô seguidor de linha com sensores infravermelhos</p>
+                    <span class="gallery-tag">Robótica</span>
+                </div>
+                <div class="card gallery-card">
+                    <div class="gallery-icon">🎨</div>
+                    <h3>Arte Generativa</h3>
+                    <p>Arte visual criada algoritmicamente com padrões matemáticos</p>
+                    <span class="gallery-tag">Programação Criativa</span>
+                </div>
+                <div class="card gallery-card">
+                    <div class="gallery-icon">📸</div>
+                    <h3>Encontro de Estudantes</h3>
+                    <p>Encontro presencial em Luanda - Networking e apresentações</p>
+                    <span class="gallery-tag">Comunidade</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Contribuições da Comunidade</h2>
+            <div class="gallery-grid">
+                <div class="card gallery-card">
+                    <div class="gallery-icon">💡</div>
+                    <h3>Protótipo de App</h3>
+                    <p>Aplicação móvel para gerenciamento de tarefas</p>
+                    <span class="gallery-tag">Dev</span>
+                </div>
+                <div class="card gallery-card">
+                    <div class="gallery-icon">🎯</div>
+                    <h3>Simulador Educativo</h3>
+                    <p>Ferramenta interativa para aprender física</p>
+                    <span class="gallery-tag">Educação</span>
+                </div>
+                <div class="card gallery-card">
+                    <div class="gallery-icon">🚀</div>
+                    <h3>Jogo de Espaço</h3>
+                    <p>Jogo interativo com física realista</p>
+                    <span class="gallery-tag">Programação Criativa</span>
+                </div>
+                <div class="card gallery-card">
+                    <div class="gallery-icon">🏆</div>
+                    <h3>Projeto Premiado</h3>
+                    <p>Vencedor da Competição de Inovação 2026</p>
+                    <span class="gallery-tag">Destaque</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Escola do Futuro</h4>
+                <p>Educação tech gratuita, offline e para todos em Angola.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="dashboard.html">Cursos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 contato@escoladofuturo.ao<br>📱 +244 923 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Escola do Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

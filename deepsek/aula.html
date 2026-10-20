@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Programação Criativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-menu-container">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="dashboard.html">Cursos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav class="desktop-nav">
+        <div class="logo">Escola do Futuro</div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="dashboard.html">Cursos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="lesson">
+        <div class="card lesson-content">
+            <h1>Criando seu primeiro jogo no navegador</h1>
+            <p><strong>Conteúdo gerado por IA para demonstração.</strong></p>
+            <p>Com apenas HTML, CSS e JavaScript, você pode fazer um jogo onde o usuário clica em um botão que se move. Isso ensina eventos, manipulação do DOM e lógica básica.</p>
+            <div class="code-block">
+                <pre>
+&lt;button id="catchMe"&gt;Clique aqui!&lt;/button&gt;
+&lt;script&gt;
+  const btn = document.getElementById('catchMe');
+  btn.addEventListener('mouseenter', () => {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 100);
+    btn.style.position = 'absolute';
+    btn.style.left = x + 'px';
+    btn.style.top = y + 'px';
+  });
+  btn.addEventListener('click', () => alert('Você ganhou!'));
+&lt;/script&gt;
+                </pre>
+            </div>
+            <p><strong>🎧 Áudio explicativo:</strong> (simulado) Ouça o resumo da aula.</p>
+            <button class="btn-secondary" onclick="alert('Modo offline: áudio disponível após download do conteúdo.')">Baixar áudio</button>
+            <div class="lesson-footer">
+                <a href="curso-programacao.html" class="btn-primary">← Voltar para o curso</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

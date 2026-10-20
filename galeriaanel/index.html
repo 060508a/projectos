@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria Anel — Objetos com História</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- OVERLAY sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">G·A</span>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#inicio" class="sidebar-link" data-close>
+          <span class="link-num">01</span>Início
+        </a></li>
+        <li><a href="#quem-somos" class="sidebar-link" data-close>
+          <span class="link-num">02</span>Quem somos
+        </a></li>
+        <li><a href="#missao" class="sidebar-link" data-close>
+          <span class="link-num">03</span>Missão
+        </a></li>
+        <li><a href="#visao" class="sidebar-link" data-close>
+          <span class="link-num">04</span>Visão
+        </a></li>
+        <li><a href="#produtos" class="sidebar-link" data-close>
+          <span class="link-num">05</span>Nossos produtos
+        </a></li>
+        <li><a href="#cadastrar" class="sidebar-link" data-close>
+          <span class="link-num">06</span>Cadastrar
+        </a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <p>Cada objeto guarda<br/><em>uma história.</em></p>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#inicio" class="header-logo">Galeria Anel</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+      <span class="theme-icon-sun">☀</span>
+      <span class="theme-icon-moon">◑</span>
+    </button>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">— plataforma de objetos reutilizados</p>
+        <h1 class="hero-title">
+          Cada objeto<br/>
+          <em>guarda uma</em><br/>
+          história.
+        </h1>
+        <p class="hero-subtitle">
+          Damos uma segunda vida a peças únicas, carregadas de memória e beleza.<br/>
+          Encontre o objeto que ressoa com a sua história.
+        </p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn-primary">Explorar galeria</a>
+          <a href="#quem-somos" class="btn-ghost">Saber mais</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO STRIP -->
+    <div class="manifesto-strip" aria-hidden="true">
+      <div class="manifesto-track">
+        <span>Objetos com alma</span><span class="dot">·</span>
+        <span>Histórias que continuam</span><span class="dot">·</span>
+        <span>Beleza reutilizada</span><span class="dot">·</span>
+        <span>Memória que vive</span><span class="dot">·</span>
+        <span>Objetos com alma</span><span class="dot">·</span>
+        <span>Histórias que continuam</span><span class="dot">·</span>
+        <span>Beleza reutilizada</span><span class="dot">·</span>
+        <span>Memória que vive</span><span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- QUEM SOMOS -->
+    <section class="section section-split" id="quem-somos">
+      <div class="section-visual">
+        <div class="visual-frame">
+          <div class="visual-inner">
+            <div class="visual-shape vs-1"></div>
+            <div class="visual-shape vs-2"></div>
+            <div class="visual-number">01</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-text">
+        <p class="section-label">Quem somos</p>
+        <h2 class="section-title">Uma galeria de<br/><em>memórias vivas</em></h2>
+        <p class="section-body">
+          A Galeria Anel nasceu da crença de que os objetos carregam emoção. 
+          Somos uma plataforma dedicada à curadoria e venda de peças reutilizadas — 
+          cada uma escolhida pela sua história, pelo seu valor estético e pelo 
+          impacto positivo que representa para o planeta.
+        </p>
+        <p class="section-body">
+          Não vendemos apenas objetos. Oferecemos continuidade — a possibilidade 
+          de uma peça encontrar um novo lar onde será novamente amada.
+        </p>
+      </div>
+    </section>
+
+    <!-- MISSÃO -->
+    <section class="section section-split section-reverse" id="missao">
+      <div class="section-text">
+        <p class="section-label">Missão</p>
+        <h2 class="section-title">Resgatar o que<br/><em>ainda tem valor</em></h2>
+        <p class="section-body">
+          A nossa missão é tornar o consumo consciente uma experiência 
+          bela e acessível. Acreditamos que sustentabilidade e sofisticação 
+          caminham juntas — e que cada escolha de compra pode ser um 
+          ato de cuidado com o mundo.
+        </p>
+        <div class="mission-pillars">
+          <div class="pillar">
+            <span class="pillar-icon">◌</span>
+            <span>Curadoria emocional</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">◌</span>
+            <span>Impacto sustentável</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">◌</span>
+            <span>Beleza acessível</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-visual">
+        <div class="visual-frame visual-frame-alt">
+          <div class="visual-inner">
+            <div class="visual-shape vs-3"></div>
+            <div class="visual-shape vs-4"></div>
+            <div class="visual-number">02</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISÃO -->
+    <section class="section section-center" id="visao">
+      <div class="section-center-inner">
+        <p class="section-label">Visão</p>
+        <h2 class="section-title section-title-lg">
+          Um mundo onde<br/><em>nada se desperdiça</em><br/>e tudo tem beleza.
+        </h2>
+        <p class="section-body section-body-center">
+          Imaginamos um futuro onde o consumo é intencional, onde cada 
+          objeto tem uma trajetória valorizada, e onde a arte de reutilizar 
+          é vista como um ato de refinamento — não de renúncia.
+        </p>
+        <div class="vision-stats">
+          <div class="vstat">
+            <span class="vstat-num">2 400+</span>
+            <span class="vstat-label">Objetos com novo lar</span>
+          </div>
+          <div class="vstat-divider"></div>
+          <div class="vstat">
+            <span class="vstat-num">98%</span>
+            <span class="vstat-label">Satisfação dos compradores</span>
+          </div>
+          <div class="vstat-divider"></div>
+          <div class="vstat">
+            <span class="vstat-num">120+</span>
+            <span class="vstat-label">Vendedores parceiros</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="section" id="produtos">
+      <div class="products-header">
+        <p class="section-label">Nossos produtos</p>
+        <h2 class="section-title">Categorias da<br/><em>galeria</em></h2>
+      </div>
+      <div class="products-grid">
+
+        <article class="product-card pc-wide">
+          <div class="pc-bg pc-bg-1"></div>
+          <div class="pc-content">
+            <span class="pc-cat">I</span>
+            <h3 class="pc-title">Mobiliário & Decoração</h3>
+            <p class="pc-desc">Peças que redefinem espaços. Cadeiras, mesas, espelhos e objetos decorativos com carácter único.</p>
+            <span class="pc-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="pc-bg pc-bg-2"></div>
+          <div class="pc-content">
+            <span class="pc-cat">II</span>
+            <h3 class="pc-title">Livros & Manuscritos</h3>
+            <p class="pc-desc">Palavras que atravessaram o tempo. Obras raras, diários antigos e edições especiais.</p>
+            <span class="pc-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="pc-bg pc-bg-3"></div>
+          <div class="pc-content">
+            <span class="pc-cat">III</span>
+            <h3 class="pc-title">Joias & Adornos</h3>
+            <p class="pc-desc">Peças que adornam com história. Cada joia carrega a memória de quem a amou antes.</p>
+            <span class="pc-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="pc-bg pc-bg-4"></div>
+          <div class="pc-content">
+            <span class="pc-cat">IV</span>
+            <h3 class="pc-title">Arte & Fotografia</h3>
+            <p class="pc-desc">Obras originais, gravuras e fotografias analógicas. Arte que merece uma nova parede.</p>
+            <span class="pc-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="product-card pc-wide">
+          <div class="pc-bg pc-bg-5"></div>
+          <div class="pc-content">
+            <span class="pc-cat">V</span>
+            <h3 class="pc-title">Roupa & Moda Vintage</h3>
+            <p class="pc-desc">Vestuário com alma. Peças selecionadas pela qualidade, corte e história que guardam.</p>
+            <span class="pc-arrow">→</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA / CADASTRAR -->
+    <section class="cta-section" id="cadastrar">
+      <div class="cta-orb"></div>
+      <div class="cta-inner">
+        <p class="section-label">Junte-se a nós</p>
+        <h2 class="cta-title">A sua história<br/><em>começa aqui.</em></h2>
+        <p class="cta-body">
+          Seja comprador ou vendedor — registe-se e faça parte de uma 
+          comunidade que acredita na beleza do que já existiu.
+        </p>
+        <form class="cta-form" onsubmit="handleForm(event)">
+          <div class="cta-form-row">
+            <input type="text" placeholder="O seu nome" required aria-label="Nome" />
+            <input type="email" placeholder="O seu e-mail" required aria-label="E-mail" />
+          </div>
+          <div class="cta-form-row">
+            <select aria-label="Tipo de conta">
+              <option value="" disabled selected>Tipo de conta</option>
+              <option value="comprador">Comprador</option>
+              <option value="vendedor">Vendedor</option>
+              <option value="ambos">Ambos</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Cadastrar na Galeria Anel</button>
+        </form>
+        <div class="cta-success" id="ctaSuccess" aria-live="polite">
+          <span>✓</span> Registo recebido. Entraremos em contacto em breve.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Galeria Anel</span>
+        <p>Uma curadoria de objetos<br/>com memória e beleza.</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#missao">Missão</a></li>
+          <li><a href="#visao">Visão</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#cadastrar">Cadastrar</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <p class="footer-contact-label">Contacto</p>
+        <p>galeria@anel.pt</p>
+        <p>+351 910 234 567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Galeria Anel. Todos os direitos reservados.</p>
+      <p class="footer-tagline">Objetos com alma, histórias que continuam.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

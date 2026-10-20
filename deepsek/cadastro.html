@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Escola do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu mobile com hambúrguer -->
+    <div class="mobile-menu-container">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <!-- Menu lateral mobile que aparece ao clicar no hambúrguer -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="dashboard.html">Cursos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Menu de navegação para desktop -->
+    <nav class="desktop-nav">
+        <div class="logo">Escola do Futuro</div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="dashboard.html">Cursos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botão fixo de toggle dark mode -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <main class="form-container">
+        <div class="card form-card">
+            <h2>Cadastro de Aluno</h2>
+            <form id="signupForm">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="date" placeholder="Data de Nascimento">
+                <input type="tel" placeholder="Telefone">
+                <input type="email" placeholder="Email" required>
+                <select required>
+                    <option value="">Selecionar área</option>
+                    <option>Tecnologia</option>
+                    <option>Engenharia</option>
+                    <option>Design</option>
+                </select>
+                <select required>
+                    <option value="">Selecionar curso</option>
+                    <option>Programação Criativa</option>
+                    <option>Robótica</option>
+                </select>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit" class="btn-primary">Cadastrar</button>
+            </form>
+            <p class="demo-note">🔧 Demo: não envia dados. Clique para simular sucesso.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Escola do Futuro</h4>
+                <p>Educação tech gratuita, offline e para todos em Angola.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="dashboard.html">Cursos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 contato@escoladofuturo.ao<br>📱 +244 923 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Escola do Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

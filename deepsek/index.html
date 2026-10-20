@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Escola do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu mobile com hambúrguer -->
+    <div class="mobile-menu-container">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <!-- Menu lateral mobile que aparece ao clicar no hambúrguer -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="dashboard.html">Cursos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Menu de navegação para desktop -->
+    <nav class="desktop-nav">
+        <div class="logo">Escola do Futuro</div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="dashboard.html">Cursos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botão fixo de toggle dark mode -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Seção hero (banner principal) -->
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Aprender é <span class="gradient-text">construir o futuro</span></h1>
+            <p>Plataforma gratuita, offline e feita para Angola. Acesse cursos de Programação Criativa e Robótica, com encontros reais.</p>
+            <a href="cadastro.html" class="btn-primary">Começar agora →</a>
+        </div>
+    </main>
+
+    <!-- Seção de estatísticas da plataforma (dashboard) -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="card stat-card">
+                <div class="stat-item">
+                    <div class="stat-number">1,200+</div>
+                    <div class="stat-label">Alunos inscritos</div>
+                </div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Cursos disponíveis</div>
+                </div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Encontros realizados</div>
+                </div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-item">
+                    <div class="stat-number">92%</div>
+                    <div class="stat-label">Taxa de satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de características principais -->
+    <section class="features">
+        <div class="card feature-card">
+            <h3>📚 Conteúdo offline</h3>
+            <p>Baixe textos, áudios e vídeos leves. Estude sem usar dados.</p>
+        </div>
+        <div class="card feature-card">
+            <h3>🤝 Encontros reais</h3>
+            <p>No final de cada módulo, grupos se encontram presencialmente.</p>
+        </div>
+        <div class="card feature-card">
+            <h3>⚙️ Ambientes de prática</h3>
+            <p>Editor de código e simuladores integrados, direto no navegador.</p>
+        </div>
+    </section>
+
+    <!-- Seção explicando por que escolher a plataforma -->
+    <section class="why-section">
+        <h2>Por que escolher Escola do Futuro?</h2>
+        <div class="why-grid">
+            <div class="card why-card">
+                <div class="why-icon">🎯</div>
+                <h3>Aprendizado prático</h3>
+                <p>Não é só teoria. Você constrói projetos reais desde o primeiro dia e vê seu código funcionando.</p>
+            </div>
+            <div class="card why-card">
+                <div class="why-icon">👥</div>
+                <h3>Comunidade ativa</h3>
+                <p>Conecte-se com outros aprendizes, compartilhe ideias e cresça junto. Ninguém aprende sozinho.</p>
+            </div>
+            <div class="card why-card">
+                <div class="why-icon">🚀</div>
+                <h3>Preparação para o mercado</h3>
+                <p>Adquira habilidades que empresas procuram. Saia preparado para seu primeiro projeto profissional.</p>
+            </div>
+            <div class="card why-card">
+                <div class="why-icon">💻</div>
+                <h3>Sempre acessível</h3>
+                <p>Baixe os cursos e estude quando quiser. No computador, tablet ou celular, offline ou online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de depoimentos de alunos -->
+    <section class="testimonials-section">
+        <h2>O que dizem nossos alunos</h2>
+        <div class="testimonials-grid">
+            <div class="card testimonial-card">
+                <p>"Consegui criar meu primeiro jogo em apenas 3 semanas! A plataforma é incrível e o suporte é excelente."</p>
+                <div class="testimonial-author">
+                    <strong>João Silva</strong>
+                    <span>Programação Criativa</span>
+                </div>
+            </div>
+            <div class="card testimonial-card">
+                <p>"O melhor é que funciona sem internet. Pude estudar no meu tempo livre, até na rua."</p>
+                <div class="testimonial-author">
+                    <strong>Maria Santos</strong>
+                    <span>Robótica</span>
+                </div>
+            </div>
+            <div class="card testimonial-card">
+                <p>"Os encontros presenciais me ajudaram a resolver dúvidas rápido. Conheci pessoas incríveis também!"</p>
+                <div class="testimonial-author">
+                    <strong>Carlos Dias</strong>
+                    <span>Programação Criativa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção com chamada para ação final (conversão) -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Pronto para começar sua jornada?</h2>
+            <p>Junte-se a centenas de aprendizes que já transformaram suas vidas através da educação tech.</p>
+            <a href="cadastro.html" class="btn-primary btn-large">Cadastre-se gratuitamente →</a>
+        </div>
+    </section>
+
+    <!-- Footer com informações e links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Escola do Futuro</h4>
+                <p>Educação tech gratuita, offline e para todos em Angola.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="dashboard.html">Cursos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 contato@escoladofuturo.ao<br>📱 +244 923 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Escola do Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script que controla interações (menu hambúrguer, formulários, etc) -->
+    <script src="script.js"></script>
+</body>
+</html>

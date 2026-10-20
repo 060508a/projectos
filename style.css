@@ -1,0 +1,348 @@
+/* =========================================================
+   MARINE COLOSSUS - style.css
+   Ficheiro de estilos partilhado pelas três páginas
+   (index.html, loja.html e pagina_pessoal.html)
+   ========================================================= */
+
+/* ---------- 1. CORES E MEDIDAS (variáveis) ----------
+   Se quiseres mudar uma cor em todo o site,
+   basta mudares aqui, num só sítio. */
+:root {
+  --azul-escuro: #002244;   /* menu e rodapé */
+  --azul: #0066cc;          /* botões e detalhes */
+  --azul-hover: #004d99;    /* botões ao passar o rato */
+  --azul-claro: #4da6ff;    /* links de destaque */
+  --fundo: #f3f7fc;         /* fundo da página */
+  --texto: #1a2a3a;         /* cor do texto */
+  --erro: #c62828;          /* mensagens de erro */
+}
+
+/* ---------- 2. ESTILOS GERAIS ---------- */
+
+/* box-sizing evita que padding "estique" as caixas */
+* {
+  box-sizing: border-box;
+}
+
+/* Rolagem suave ao clicar nos links do menu (#sobre, #contato...) */
+html {
+  scroll-behavior: smooth;
+  /* Evita que o menu fixo tape o título da secção */
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* Caixa central que limita a largura do conteúdo */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo-centrado {
+  text-align: center;
+}
+
+/* ---------- 3. CABEÇALHO ---------- */
+.topo {
+  /* Degradê de azul escuro para azul. Sintaxe: linear-gradient(direção, cor1, cor2) */
+  background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+  color: white;               /* texto branco para se ler bem sobre o azul */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.topo p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* ---------- 4. MENU ---------- */
+.menu {
+  background: var(--azul-escuro);
+  padding: 15px;
+  position: sticky;   /* fica colado no topo ao rolar */
+  top: 0;
+  z-index: 100;
+  transition: box-shadow 0.3s;
+}
+
+/* O JS acrescenta esta classe quando a página já rolou um pouco */
+.menu.com-sombra {
+  box-shadow: 0 4px 12px rgba(0, 34, 68, 0.3);
+}
+
+.menu-links {
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  color: var(--azul-claro);
+}
+
+/* Links para as outras páginas (loja e fundadora) */
+.menu a.destaque {
+  color: var(--azul-claro);
+}
+
+/* Botão ☰: escondido no computador */
+.menu-botao {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+/* ---------- 5. CARTÕES ---------- */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 34, 68, 0.1);
+}
+
+/* Linha azul do lado esquerdo (nota o ponto: é uma classe!) */
+.card-servico {
+  border-left: 4px solid var(--azul);
+}
+
+/* Estado inicial da animação: invisível e um pouco mais abaixo.
+   Só é aplicado pelo JS, por isso sem JS os cartões ficam sempre visíveis. */
+.card.escondido {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* ---------- 6. BOTÕES ---------- */
+.btn {
+  background: var(--azul);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+/* Corrigido: faltava o ponto antes de "btn" */
+.btn:hover,
+.btn:focus-visible {
+  background: var(--azul-hover);
+}
+
+.btn-largo {
+  width: 100%;
+  padding: 14px;
+  font-weight: bold;
+}
+
+/* ---------- 7. EQUIPA ---------- */
+.equipa {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;   /* os membros passam para a linha de baixo se faltar espaço */
+  gap: 20px;
+}
+
+.membro {
+  text-align: center;
+}
+
+/* Círculo com iniciais, no lugar da foto */
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background: var(--azul);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quando puseres fotos reais, este estilo serve para elas */
+.membro img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* ---------- 8. FORMULÁRIO ---------- */
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 0;
+  border: 1px solid #ccd6e0;
+  border-radius: 5px;
+  font: inherit;
+}
+
+/* Realce quando o campo está selecionado */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: 2px solid var(--azul);
+  border-color: var(--azul);
+}
+
+/* O JS acrescenta esta classe ao campo com erro */
+.formulario .campo-invalido {
+  border-color: var(--erro);
+}
+
+.erro {
+  color: var(--erro);
+  font-size: 0.9em;
+  margin: 4px 0 0;
+  min-height: 1em;
+}
+
+/* ---------- 9. RODAPÉ ---------- */
+.rodape {
+  background: var(--azul-escuro);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.redes a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* ---------- 10. BOTÕES FLUTUANTES ---------- */
+.botao-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: transform 0.3s;
+}
+
+.botao-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* Fica acima do WhatsApp (bottom: 90px) para os dois não se taparem */
+.botao-topo {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: var(--azul);
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  z-index: 99;
+}
+
+/* Quando o JS tira o atributo "hidden", o botão aparece */
+.botao-topo[hidden] {
+  display: none;
+}
+
+/* ---------- 11. TELEMÓVEL (ecrãs até 768px) ---------- */
+@media (max-width: 768px) {
+  .menu-botao {
+    display: block;
+  }
+
+  /* No telemóvel os links ficam escondidos até clicar em ☰ */
+  .menu-links {
+    display: none;
+    text-align: left;
+  }
+
+  /* O JS acrescenta "aberto" ao clicar no botão */
+  .menu-links.aberto {
+    display: block;
+  }
+
+  .menu-links a {
+    display: block;
+    margin: 0;
+    padding: 12px 5px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .topo h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* ---------- 12. ACESSIBILIDADE ---------- */
+/* Quem pediu menos movimento no telemóvel/PC não vê animações */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .card {
+    transition: none;
+  }
+}

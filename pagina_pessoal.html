@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Catimba | Criadora de Soluções Digitais</title>
+
+  <!-- Os mesmos ficheiros do index.html: o visual e o JS ficam iguais nas páginas -->
+  <link rel="stylesheet" href="stylepessoal.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header class="topo">
+    <h1>ANA CATIMBA</h1>
+    <p>Criadora de Soluções Digitais</p>
+    <p><strong>Programando ideias, moldando o mundo</strong></p>
+  </header>
+
+  <!-- ========== MENU ========== -->
+  <nav class="menu">
+    <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <div class="menu-links">
+      <a href="#sobre">Sobre mim</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <a href="index.html" class="destaque">Marine Colossus</a>
+      <a href="loja.html" class="destaque">Loja Virtual</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========== SOBRE MIM ========== -->
+    <section id="sobre" class="container">
+      <div class="card centrado">
+        <!-- LUGAR DA FOTO
+             Quando tiveres uma foto, apaga o <div class="avatar"> e usa:
+             <img src="minha-foto.jpg" alt="Ana Catimba" class="foto-perfil"> -->
+        <div class="avatar" aria-hidden="true">AC</div>
+
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou apaixonada por tecnologia e procuro transformar ideias em soluções inovadoras.
+          Com experiência em Python, C#, HTML, CSS, JavaScript e muito mais, desenvolvo sites
+          e ferramentas para ajudar empresas a crescer.
+        </p>
+        <a href="#contato" class="btn">Entre em Contato</a>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section id="servicos" class="container">
+      <div class="card centrado">
+        <h2>Serviços</h2>
+        <ul class="lista">
+          <li>Desenvolvimento de Sites Responsivos</li>
+          <li>Consultoria em Programação e Projetos Web</li>
+          <li>Automatização de Processos e Ferramentas Personalizadas</li>
+        </ul>
+        <a href="#contato" class="btn">Solicitar Orçamento</a>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS (NOVA SECÇÃO) ========== -->
+    <section id="projetos" class="container">
+      <h2 class="titulo-centrado">Conheça os Meus Projetos</h2>
+
+      <!-- Cada <a class="projeto"> é um cartão clicável.
+           Para mudar o destino, troca só o valor de href="..." -->
+      <div class="projetos">
+
+        <!-- Este já funciona: leva para a página da empresa -->
+        <a href="index.html" class="projeto">
+          <h3>Marine Colossus</h3>
+          <p>Tecnologia, publicidade e soluções personalizadas para empresas.</p>
+        </a>
+
+        <!-- href="#" não leva a lado nenhum. Quando tiveres o endereço da galeria,
+             troca por exemplo por href="https://o-teu-endereco.com" -->
+        <a href="galeriaanel/index.html" class="projeto">
+          <h3>Galeria Anel</h3>
+          <p>Em breve.</p>
+        </a>
+
+        <!-- Espaço reservado para um próximo projeto -->
+        <a href="deepsek/index.html" class="projeto">
+          <h3>Escola Online de Programação</h3>
+          <p>Em breve.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="container">
+      <div class="card centrado">
+        <h2>Contato</h2>
+        <p>Gostou do que viu? Entre em contato comigo para falarmos do seu projeto!</p>
+
+        <ul class="lista">
+          <li>Email: <a href="mailto:anamaravilha658@gmail.com">anamaravilha658@gmail.com</a></li>
+          <li>Telefone: 925 943 611</li>
+          <li>Instagram: <a href="https://www.instagram.com/anamaravilha658" target="_blank" rel="noopener">@anamaravilha658</a></li>
+        </ul>
+
+        <!-- Abre na mesma janela (antes abria noutra aba, o que baralha em telemóvel) -->
+        <a href="index.html" class="btn">Visite a Marine Colossus</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape">
+    <!-- O JS escreve aqui o ano atual -->
+    <p>© <span id="ano">2025</span> Ana Catimba. Todos os direitos reservados.</p>
+    <p>Siga-me nas redes sociais para mais novidades.</p>
+    <div class="redes">
+      <a href="https://www.instagram.com/anamaravilha658" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:anamaravilha658@gmail.com">Email</a>
+      <a href="index.html">Marine Colossus</a>
+    </div>
+  </footer>
+
+  <!-- Botão de voltar ao topo (o script.js trata dele) -->
+  <button id="botao-topo" class="botao-topo" type="button" aria-label="Voltar ao topo" hidden>↑</button>
+
+</body>
+</html>

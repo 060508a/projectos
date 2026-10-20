@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Cursos - Escola do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu mobile com hambúrguer -->
+    <div class="mobile-menu-container">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <!-- Menu lateral mobile que aparece ao clicar no hambúrguer -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="dashboard.html">Cursos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Menu de navegação para desktop -->
+    <nav class="desktop-nav">
+        <div class="logo">Escola do Futuro</div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="dashboard.html">Cursos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botão fixo de toggle dark mode -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Seção principal dashboard -->
+    <main class="dashboard">
+        <div class="dashboard-header">
+            <h1>Escolha seu caminho</h1>
+            <p>Aprenda tecnologia com projetos práticos e encontros reais</p>
+        </div>
+
+        <!-- Cursos disponíveis -->
+        <section class="courses-section">
+            <h2>Cursos Disponíveis</h2>
+            <div class="cards-grid">
+                <a href="curso_programacao.html" class="card course-card course-active">
+                    <div class="course-header">
+                        <h3>🎨 Programação Criativa</h3>
+                        <span class="badge">Novo</span>
+                    </div>
+                    <p>Crie jogos, arte generativa e animações com código.</p>
+                    <div class="course-info">
+                        <span class="level">Nível: Iniciante</span>
+                        <span class="duration">12 semanas</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%"></div>
+                    </div>
+                </a>
+                <div class="card course-card course-disabled">
+                    <div class="course-header">
+                        <h3>🤖 Robótica</h3>
+                        <span class="badge badge-soon">Em breve</span>
+                    </div>
+                    <p>Automação com materiais simples, lógica e sensores.</p>
+                    <div class="course-info">
+                        <span class="level">Nível: Intermediário</span>
+                        <span class="duration">10 semanas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minhas inscrições -->
+        <section class="enrollments-section">
+            <h2>Minhas Inscrições</h2>
+            <div class="enrollment-list">
+                <div class="card enrollment-card">
+                    <div class="enrollment-header">
+                        <h3>Programação Criativa</h3>
+                        <span class="status enrolled">Inscrito ✓</span>
+                    </div>
+                    <p>Você está 45% do caminho. Continue estudando!</p>
+                    <div class="enrollment-actions">
+                        <a href="curso_programacao.html" class="btn-secondary">Continuar →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Próximos encontros -->
+        <section class="events-section">
+            <h2>Próximos Encontros</h2>
+            <div class="events-list">
+                <div class="card event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mai</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Encontro de Programação Criativa</h3>
+                        <p>📍 Luanda - Centro de Inovação</p>
+                        <p>🕐 14:00 - Inscreva-se</p>
+                    </div>
+                </div>
+                <div class="card event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Mai</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Workshop: Criando seu Primeiro Jogo</h3>
+                        <p>📍 Online/Presencial</p>
+                        <p>🕐 15:00 - Vagas limitadas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Escola do Futuro</h4>
+                <p>Educação tech gratuita, offline e para todos em Angola.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="dashboard.html">Cursos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 contato@escoladofuturo.ao<br>📱 +244 923 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Escola do Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
